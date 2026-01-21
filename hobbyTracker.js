@@ -15,8 +15,11 @@ function totalTime(log) {
   return log.reduce((sum, session) => sum + session.minutes, 0);
 }
 
+// The function returs all the hobies without duplicates.  
 function uniqueHobbies(log) {
+// Here "map" is used to create a new array that contains only the "hobby" names.
   const names = log.map(entry => entry.hobby);
+// "new Set" removes the duplicates, and the "..." puts them into array. 
   return [...new Set(names)];
 }
 
