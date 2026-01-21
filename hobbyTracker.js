@@ -45,3 +45,9 @@ console.log("Total time spent:", totalTime(hobbyLog), "minutes");
 console.log("Unique hobbies:", uniqueHobbies(hobbyLog));
 console.log("Sessions longer than 30 min:", longSessions(hobbyLog, 30));
 console.log("Number of relaxed sessions:", countMood(hobbyLog, "relaxed"));
+
+
+// My suggestion is to add a feature that uses the sort feature. For instance, 
+// using a sort() method to organize the hobbies in order from the longest 
+// to the shortest session. This will help the user to quickly see on which 
+// activities they spend the most time. 
