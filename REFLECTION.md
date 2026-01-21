@@ -5,5 +5,6 @@ functions work. How effectively you can process data within an array of objects.
 
 
 2. What was the most confusing part?
+
 To me, the most challenging part was using the spread operator (...) and the 
 "new Set" in the "uniqueHobbies" function. 
