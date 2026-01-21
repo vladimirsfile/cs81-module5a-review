@@ -5,8 +5,13 @@ const hobbyLog = [
   { day: "Thursday", hobby: "drawing", minutes: 25, mood: "creative" },
   { day: "Friday", hobby: "reading", minutes: 35, mood: "calm" }
 ];
-
+// This function calculates the total time spent on all hobies. 
+// The function accepts "log" as a parameter, which in an array of objects.
 function totalTime(log) {
+// This line has a reduce() to combine every item in the array into a 
+// single value. "sum" is the accumulator, which is set to start at "0" by the 
+// "0" at the end of the line. "session" is the current object, for each loop
+// it adds the minutes of the current objet to the accumolator.
   return log.reduce((sum, session) => sum + session.minutes, 0);
 }
 
