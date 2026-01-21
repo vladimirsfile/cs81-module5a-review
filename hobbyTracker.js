@@ -46,6 +46,9 @@ console.log("Unique hobbies:", uniqueHobbies(hobbyLog));
 console.log("Sessions longer than 30 min:", longSessions(hobbyLog, 30));
 console.log("Number of relaxed sessions:", countMood(hobbyLog, "relaxed"));
 
+// I wanted to display only sessions that are shorter than 25 min,
+// so I used the "filter" logic from the "longSessions" function above. 
+console.log("Sessions shorter than 25 min $", hobbyLog.filter(entry => entry.minutes < 25));
 
 // My suggestion is to add a feature that uses the sort feature. For instance, 
 // using a sort() method to organize the hobbies in order from the longest 
