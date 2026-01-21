@@ -6,7 +6,7 @@ const hobbyLog = [
   { day: "Friday", hobby: "reading", minutes: 35, mood: "calm" }
 ];
 // This function calculates the total time spent on all hobbies. 
-// The function accepts "log" as a parameter, which in an array of objects.
+// The function accepts "log" as a parameter, which is an array of objects.
 function totalTime(log) {
 // This line has a reduce() to combine every item in the array into a 
 // single value. "sum" is the accumulator, which is set to start at "0" by the 
@@ -19,7 +19,7 @@ function totalTime(log) {
 function uniqueHobbies(log) {
 // Here "map" is used to create a new array that contains only the "hobby" names.
   const names = log.map(entry => entry.hobby);
-// "new Set" removes the duplicates, and the "..." puts them into array. 
+// "new Set" removes the duplicates, and the "..." puts them into an array. 
   return [...new Set(names)];
 }
 
@@ -31,7 +31,13 @@ function longSessions(log, minMinutes) {
   return log.filter(entry => entry.minutes > minMinutes);
 }
 
+// Provided the second parameter, the function takes a hobby and then
+// returns how many times that particular hobby has occurred in the 
+// array of objects, which was provided by the first parameter. 
 function countMood(log, moodType) {
+// "filter()" creates a new list containing only entries that match what 
+// "moodType" has provided. The "length" at the end of the line counts the  
+// number of times that particular mood has occurred in the list.     
   return log.filter(entry => entry.mood === moodType).length;
 }
 
